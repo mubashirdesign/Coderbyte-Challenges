@@ -3,7 +3,7 @@ My answers/logic to the Coderbyte quiz challenges.
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-1.Find the longest word in a string:
+1. Find the longest word in a string:
 
 function LongestWord(sen) { 
 
@@ -54,3 +54,13 @@ const arrNumb = [];
 FirstFactorial(readline());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3. Reverse the string input
+
+function FirstReverse(str) { 
+  //"hello"
+  //convert string into array
+  const stringArray = str.split('').reverse().join(''); // "olleh"
+  return stringArray; 
+}
+   
+FirstReverse(readline());
