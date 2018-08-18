@@ -69,3 +69,40 @@ function FirstReverse(str) {
    
 FirstReverse(readline());
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+4. Replace the characters based on algorithm
+
+function LetterChanges(str) { 
+
+
+//replace the characters by adding 1 to the ascii code making it go from a to b, b to c, and so on
+
+//replace using regex to select a to z, run the callback function to run the algorithm
+
+//use the iteneray operator to set Z to a because adding + 1 to Z's ascii code will not make it A
+
+  const newStr = str.replace( /[a-z]/gi,(char) => { 
+  
+    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
+    
+  });
+
+  //replace using regex to select all vowels
+  
+ //use the call back function to uppercase the selected regex expression
+ 
+ const strFinal = newStr.replace(/a|e|i|o|u/gi, (vowel) => { 
+ 
+    return vowel.toUpperCase();
+    
+  });
+
+  // return the final string
+  
+  return strFinal;
+         
+}
+   
+   
+// keep this function call here 
+
+LetterChanges(readline());
