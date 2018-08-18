@@ -27,11 +27,11 @@ LongestWord(readline());
 
 function FirstFactorial(num) { 
 
-const arrNumb = [];
+    const arrNumb = [];
 
   //Loop through the numbers to make an array of the factorials
   
- if (num > 0){    
+    if (num > 0){    
  
      for (let i = 0; i <= num; i++ ){   
      
@@ -41,13 +41,13 @@ const arrNumb = [];
         
          //shift 0 out of the array
         arrNumb.shift();
-}
+    }
 
   //multiply each array element with the last one using reduce
   
-  const factorialNumb = arrNumb.reduce((a, b) => a*b);
+    const factorialNumb = arrNumb.reduce((a, b) => a*b);
   
-  return factorialNumb;      
+    return factorialNumb;      
   
 }
 
@@ -55,17 +55,17 @@ FirstFactorial(readline());
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 3. Reverse the string input
 
-function FirstReverse(str) { 
+        function FirstReverse(str) { 
 
   //"hello"
   
   //convert string into array
   
-  const stringArray = str.split('').reverse().join(''); // "olleh"
+     const stringArray = str.split('').reverse().join(''); // "olleh"
   
-  return stringArray; 
+     return stringArray; 
   
-}
+        }
    
 FirstReverse(readline());
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -80,9 +80,11 @@ function LetterChanges(str) {
 
 //use the iteneray operator to set Z to a because adding + 1 to Z's ascii code will not make it A
 
-  const newStr = str.replace( /[a-z]/gi,(char) => { 
+    const newStr = str.replace( /[a-z]/gi,(char) => { 
+  
     return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1); 
-  });
+    
+     });
 
   //replace using regex to select all vowels
   
@@ -96,7 +98,7 @@ function LetterChanges(str) {
 
   // return the final string
   
-  return strFinal;
+    return strFinal;
          
 }
    
