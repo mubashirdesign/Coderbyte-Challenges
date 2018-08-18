@@ -44,11 +44,13 @@ const arrNumb = [];
 }
 
   //multiply each array element with the last one using reduce
+  
   const factorialNumb = arrNumb.reduce((a, b) => a*b);
   
   return factorialNumb;      
   
 }
+
 FirstFactorial(readline());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
