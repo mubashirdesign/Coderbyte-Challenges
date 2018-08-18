@@ -81,9 +81,7 @@ function LetterChanges(str) {
 //use the iteneray operator to set Z to a because adding + 1 to Z's ascii code will not make it A
 
   const newStr = str.replace( /[a-z]/gi,(char) => { 
-  
-    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
-    
+    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1); 
   });
 
   //replace using regex to select all vowels
