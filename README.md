@@ -27,20 +27,28 @@ LongestWord(readline());
 
 function FirstFactorial(num) { 
 
-
 const arrNumb = [];
+
   //Loop through the numbers to make an array of the factorials
+  
  if (num > 0){    
-     for (let i = 0; i <= num; i++ ){     
+ 
+     for (let i = 0; i <= num; i++ ){   
+     
         arrNumb.push(i);
+        
         }
+        
          //shift 0 out of the array
         arrNumb.shift();
 }
+
   //multiply each array element with the last one using reduce
   const factorialNumb = arrNumb.reduce((a, b) => a*b);
   
-  return factorialNumb;        
+  return factorialNumb;      
+  
 }
 FirstFactorial(readline());
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
