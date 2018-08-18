@@ -72,3 +72,34 @@ FirstReverse(readline());
         }
 
 LetterChanges(readline());
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+5. Simple adding //i.e  4 = 4 + 3 + 2 + 1
+
+Non recursive solution:
+
+        function SimpleAdding(num) { 
+         //make the number into an array of its length by using a counter and pushing it
+         const arrNumb = [];
+         if (num > 0){
+              for (let i = 1; i <= num; i++) {
+                  arrNumb.push(i);
+              }
+          }
+        //use the reduce function on the array and return it  
+        //note, using curly brackets in this arrow function makes it go undefined because it prevents 1 line of code to return
+        const simpleAdd = arrNumb.reduce((a,b) => a + b);
+        return simpleAdd;      
+        }
+
+recursive solution:
+
+        function SimpleAdding(num) { 
+          if (num === 1) {
+            return 1;
+          }
+          else {
+            return num + SimpleAdding(num -1);
+          }
+        }
+
+SimpleAdding(readline());
